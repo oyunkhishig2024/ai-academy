@@ -16,12 +16,12 @@ sample_data = {
     ]
 }
 
-wb = openpyxl.Workbook()
+wb = openpyxl.Workbook()  #shine excel uusgej bn
 
 for sheet_name, rows in sample_data.items():
     sheet = wb.create_sheet(title=sheet_name)
     for row in rows:
         sheet.append(row)
 
-wb.save("outputs/sample_excel.xlsx")
+wb.save("outputs/sample_excel1.xlsx")
 print("Excel file created successfully.")

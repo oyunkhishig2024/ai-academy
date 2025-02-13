@@ -19,6 +19,9 @@ for sheet_name in sheet_list:
         sales = row[1]
 
         # TO DO: Add sales to monthly
-        monthly_sales += sales
+        monthly_sales = monthly_sales + sales
     
     print(f"Monthly sales for {sheet_name}: {monthly_sales}")
+
+
+

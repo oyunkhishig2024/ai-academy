@@ -1,7 +1,7 @@
-from openpyxl import load_workbook
+import openpyxl
 
 # Load an Excel workbook
-wb = load_workbook("excels/sample_data.xlsx")
+wb = openpyxl.load_workbook("excels/sample_data.xlsx")
 sheet = wb.active  # Get the first sheet
 # sheet has following data: Product, Sales, Category
 
